@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders and matches snapshot 1`] = `
+<div
+  className="sc-ifAKCX cFlEyZ"
+>
+  <header
+    className="sc-EHOje eQMpHY"
+  >
+    <h1
+      className="sc-htoDjs LmMiE"
+    >
+      React Markdown Previewer
+    </h1>
+  </header>
+  <main
+    className="sc-bZQynM gJmhNi"
+  >
+    <div
+      className="sc-bdVaJa fgQBgM"
+    >
+      <div
+        className="sc-bwzfXH dqjyPX"
+      >
+        <textarea
+          className="sc-htpNat gKNiBJ"
+          id="editor"
+          onChange={[Function]}
+          placeholder="Begin typing here ..."
+          value="
+          # a header (H1 size)
+          ## a sub header (H2 size)
+          [a link]
+          \`inline code\`  
+          \`\`\`a code block\`\`\`  
+          1. a list item
+          > a blockquote  
+          ![an image](https://cdn.vox-cdn.com/thumbor/YqrPXWiAFv9TuM0tUi_i1pZEPyE=/0x0:512x512/920x0/filters:focal(0x0:512x512):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/6808705/Cat_101.0.png)
+          **and bolded text**"
+        />
+      </div>
+    </div>
+    <div
+      className="sc-bdVaJa fgQBgM"
+    >
+      <div
+        className="sc-bxivhb eVuHrv"
+        id="preview"
+      >
+        <div>
+          <h1>
+            a header (H1 size)
+          </h1>
+          <h2>
+            a sub header (H2 size)
+          </h2>
+          <p>
+              
+            <a
+              href=""
+            >
+              a link
+            </a>
+            
+              
+            <code>
+              inline code
+            </code>
+            <br />
+              
+            <code>
+              a code block
+            </code>
+            <br />
+              1. a list item
+          </p>
+          <blockquote>
+            <p>
+              a blockquote
+              <br />
+                
+              <img
+                alt="an image"
+                src="https://cdn.vox-cdn.com/thumbor/YqrPXWiAFv9TuM0tUi_i1pZEPyE=/0x0:512x512/920x0/filters:focal(0x0:512x512):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/6808705/Cat_101.0.png"
+              />
+              
+                
+              <strong>
+                and bolded text
+              </strong>
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+`;

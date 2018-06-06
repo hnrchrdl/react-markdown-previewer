@@ -1,10 +1,9 @@
-// Link.react.test.js
 import React from 'react';
-import App from './App';
+import IOContainer from './IOContainer';
 import renderer from 'react-test-renderer';
 
 test('App renders and matches snapshot', () => {
-  const component = renderer.create(<App />);
+  const component = renderer.create(<IOContainer />);
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });

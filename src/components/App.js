@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+import { Provider } from 'react-redux';
+import store from '../store';
+
 import IOContainer from './IOContainer';
 import Input from './Input';
 import Output from './Output';
@@ -25,20 +28,21 @@ const Headline = styled.h1`
 class App extends Component {
   render() {
     return (
-      <AppContainer>
-        <Header>
-          {/* <Logo src={logo} className="App-logo" alt="logo" /> */}
-          <Headline>React Markdown Previewer</Headline>
-        </Header>
-        <Main>
-          <IOContainer>
-            <Input />
-          </IOContainer>
-          <IOContainer>
-            <Output />
-          </IOContainer>
-        </Main>
-      </AppContainer>
+      <Provider store={store}>
+        <AppContainer>
+          <Header>
+            <Headline>React Markdown Previewer</Headline>
+          </Header>
+          <Main>
+            <IOContainer>
+              <Input />
+            </IOContainer>
+            <IOContainer>
+              <Output />
+            </IOContainer>
+          </Main>
+        </AppContainer>
+      </Provider>
     );
   }
 }
